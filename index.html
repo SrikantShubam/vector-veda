@@ -3,16 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy | Saraswati Daily Vow</title>
-    <meta name="description" content="Privacy policy for Saraswati Daily Vow by Vector Veda.">
+    <title>Vector Veda Template</title>
+    <meta name="description" content="Reusable dark theme template for Vector Veda pages.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
       :root {
-        --bg: #f6f4f0;
-        --card: #ffffff;
-        --text: #1b1b18;
-        --muted: #5f5c55;
-        --border: #e3dfd6;
-        --accent: #b46b2d;
+        color-scheme: dark;
+        --bg: #0a0c12;
+        --bg-2: #141827;
+        --surface: #171c2a;
+        --surface-2: #1d2434;
+        --border: #2a3246;
+        --text: #f4f0e8;
+        --muted: #b6ae9f;
+        --accent: #f2b76a;
+        --accent-2: #76d1c4;
+        --shadow: 0 24px 48px rgba(5, 8, 15, 0.55);
       }
 
       * {
@@ -21,141 +29,266 @@
 
       body {
         margin: 0;
-        background: var(--bg);
+        min-height: 100vh;
+        background: radial-gradient(circle at top, rgba(118, 209, 196, 0.12), transparent 45%),
+          radial-gradient(circle at 15% 30%, rgba(242, 183, 106, 0.2), transparent 50%),
+          linear-gradient(160deg, var(--bg), var(--bg-2));
         color: var(--text);
-        font-family: "Georgia", "Times New Roman", serif;
+        font-family: "Karla", "Segoe UI", sans-serif;
         line-height: 1.6;
       }
 
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        width: 48vw;
+        height: 48vw;
+        border-radius: 50%;
+        filter: blur(0);
+        opacity: 0.32;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      body::before {
+        top: -18vw;
+        left: -10vw;
+        background: radial-gradient(circle, rgba(118, 209, 196, 0.35), transparent 65%);
+      }
+
+      body::after {
+        bottom: -20vw;
+        right: -12vw;
+        background: radial-gradient(circle, rgba(242, 183, 106, 0.35), transparent 65%);
+      }
+
       main {
-        max-width: 820px;
-        margin: 56px auto;
-        padding: 0 20px 72px;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 72px 24px 96px;
+        position: relative;
+        z-index: 1;
       }
 
       header {
-        margin-bottom: 24px;
+        display: grid;
+        gap: 14px;
+        margin-bottom: 32px;
+      }
+
+      .kicker {
+        text-transform: uppercase;
+        letter-spacing: 0.32em;
+        font-size: 0.75rem;
+        color: var(--accent);
+      }
+
+      h1,
+      h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        margin: 0;
       }
 
       h1 {
-        font-size: 2.2rem;
-        margin: 0 0 8px;
+        font-size: clamp(2.4rem, 5vw, 3.6rem);
       }
 
       .lead {
         color: var(--muted);
-        margin: 0 0 8px;
+        margin: 0;
+        max-width: 60ch;
+        font-size: 1.05rem;
       }
 
-      section {
-        background: var(--card);
-        border: 1px solid var(--border);
+      .template-note {
+        border: 1px dashed var(--border);
         border-radius: 12px;
-        padding: 20px 24px;
-        margin: 16px 0;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--muted);
       }
 
-      h2 {
-        font-size: 1.25rem;
-        margin: 0 0 8px;
+      .grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin: 24px 0 8px;
+      }
+
+      .card {
+        background: linear-gradient(160deg, rgba(23, 28, 42, 0.98), rgba(29, 36, 52, 0.96));
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(242, 183, 106, 0.4);
+        color: var(--accent);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+      }
+
+      .card h2 {
+        font-size: 1.35rem;
+        margin-top: 12px;
+      }
+
+      .card p,
+      .card ul {
+        color: var(--muted);
+        margin: 10px 0 0;
       }
 
       ul {
         padding-left: 20px;
-        margin: 8px 0 0;
+      }
+
+      .cta {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 24px;
+        border-radius: 18px;
+        border: 1px solid var(--border);
+        background: linear-gradient(120deg, rgba(242, 183, 106, 0.16), rgba(118, 209, 196, 0.14));
+        box-shadow: var(--shadow);
+      }
+
+      .cta-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
       }
 
       a {
         color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #1b1307;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .button.secondary {
+        background: transparent;
+        border: 1px solid var(--border);
+        color: var(--text);
       }
 
       footer {
-        margin-top: 24px;
+        margin-top: 48px;
         color: var(--muted);
         font-size: 0.95rem;
       }
 
-      @media (max-width: 600px) {
+      .animate {
+        opacity: 0;
+        transform: translateY(16px);
+        animation: rise 0.9s ease forwards;
+        animation-delay: var(--delay, 0s);
+      }
+
+      @keyframes rise {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 720px) {
         main {
-          margin: 32px auto;
+          padding-top: 56px;
         }
 
-        h1 {
-          font-size: 1.8rem;
+        .cta {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .animate {
+          animation: none;
+          opacity: 1;
+          transform: none;
         }
       }
     </style>
   </head>
   <body>
     <main>
-      <header>
-        <h1>Privacy Policy</h1>
-        <p class="lead">Effective date: 2026-01-20</p>
+      <header class="animate" style="--delay: 0.05s;">
+        <span class="kicker">Template</span>
+        <h1>Landing Page Layout</h1>
         <p class="lead">
-          Vector Veda ("we", "us") operates the Saraswati Daily Vow app (the "App").
-          This policy explains what information we collect and how we use it.
+          Replace this headline and supporting copy with the story you want visitors to see first.
+          Keep the tone confident and precise.
+        </p>
+        <p class="template-note">
+          This index is a reusable template. Swap sections, rename headings, and connect links to
+          your project pages.
         </p>
       </header>
 
-      <section>
-        <h2>Information we collect</h2>
-        <ul>
-          <li>Usage data such as screen views, session starts, and feature interactions.</li>
-          <li>Vandana Circle data you provide, including display name, room code, prayer counts, and nudges.</li>
-          <li>Device and app information (device identifiers, OS version, app version, and diagnostics).</li>
-          <li>Local preferences stored on your device (for example, language and reminders).</li>
-        </ul>
+      <div class="grid">
+        <section class="card animate" style="--delay: 0.15s;">
+          <span class="tag">Section A</span>
+          <h2>Hero Story</h2>
+          <p>Introduce the product, ritual, or collection with a short, cinematic description.</p>
+        </section>
+
+        <section class="card animate" style="--delay: 0.25s;">
+          <span class="tag">Section B</span>
+          <h2>Proof Points</h2>
+          <ul>
+            <li>Highlight a key outcome or promise.</li>
+            <li>Show evidence or a metric that matters.</li>
+            <li>Describe the experience in a single sentence.</li>
+          </ul>
+        </section>
+
+        <section class="card animate" style="--delay: 0.35s;">
+          <span class="tag">Section C</span>
+          <h2>Experience Notes</h2>
+          <p>Use this space for a short narrative, testimonial, or a guiding instruction.</p>
+        </section>
+      </div>
+
+      <section class="cta animate" style="--delay: 0.45s;">
+        <div>
+          <h2>Call to Action</h2>
+          <p class="lead">Use this block for your primary action and a secondary destination.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button" href="saraswati-vandana-privacy-policy/">Privacy Policy</a>
+          <a class="button secondary" href="#">Secondary Link</a>
+        </div>
       </section>
 
-      <section>
-        <h2>How we use information</h2>
-        <ul>
-          <li>Provide core features like Vandana Circle syncing and progress tracking.</li>
-          <li>Improve the App and understand usage via Firebase Analytics.</li>
-          <li>Maintain security and reliability.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Sharing</h2>
-        <p>
-          We share information with service providers that help us operate the App,
-          such as Google Firebase (Analytics and Firestore). We may also share
-          information if required by law.
-        </p>
-      </section>
-
-      <section>
-        <h2>Data retention</h2>
-        <p>
-          We retain information as long as needed to provide the App and for legitimate
-          business purposes. If you want your Vandana Circle data removed, contact us.
-        </p>
-      </section>
-
-      <section>
-        <h2>Children's privacy</h2>
-        <p>
-          The App is not directed to children under 13, and we do not knowingly
-          collect personal information from children.
-        </p>
-      </section>
-
-      <section>
-        <h2>Changes</h2>
-        <p>We may update this policy from time to time. We will post the latest version on this page.</p>
-      </section>
-
-      <section>
-        <h2>Contact</h2>
-        <p>
-          If you have questions or requests, contact Vector Veda at
-          <a href="mailto:privacy@vectorveda.com">privacy@vectorveda.com</a>.
-        </p>
-      </section>
-
-      <footer>
-        <p>Privacy Policy for Saraswati Daily Vow.</p>
+      <footer class="animate" style="--delay: 0.55s;">
+        <p>Template footer copy. Replace with your contact info or navigation.</p>
       </footer>
     </main>
   </body>
