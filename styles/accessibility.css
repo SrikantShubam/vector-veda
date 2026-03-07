@@ -1,0 +1,37 @@
+html[data-a11y="enhanced"] {
+  --phase4-muted: var(--phase4-muted-aa);
+  --phase4-focus-ring: rgba(var(--phase4-accent-rgb), 0.78);
+}
+
+html[data-a11y="enhanced"] :where(a, button, [role="button"], input, textarea, select):focus-visible {
+  outline: 2px solid var(--phase4-focus-ring) !important;
+  outline-offset: 3px;
+  box-shadow:
+    0 0 0 2px rgba(var(--phase4-bg-rgb), 0.92),
+    0 0 0 5px rgba(var(--phase4-accent-rgb), 0.4);
+}
+
+html[data-a11y="enhanced"] :where(
+  [class*="headingDescription"],
+  [class*="cardDescription"],
+  [class*="subtitle"],
+  [class*="answer"],
+  [class*="resultText"],
+  [class*="chatLineText"],
+  [class*="stepCounter"],
+  [class*="chatbotCounter"],
+  [class*="growthMonth"],
+  [class*="avatarIcon"],
+  [class*="role"],
+  [class*="description"]
+) {
+  color: var(--phase4-muted-aa) !important;
+}
+
+html[data-a11y="enhanced"] :where(.mobileDot) {
+  background: rgba(var(--phase4-accent-rgb), 0.52) !important;
+}
+
+html[data-a11y="enhanced"] :where(.mobileDotActive) {
+  background: var(--phase4-accent) !important;
+}

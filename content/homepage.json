@@ -1,0 +1,266 @@
+{
+  "hero": {
+    "statusText": "Available for Work",
+    "titleLine1": "Beautiful Products.",
+    "titleLine2": "Engineered Intelligence.",
+    "subtitle": "We design exceptional user experiences and build custom AI systems that solve real problems.",
+    "primaryCtaLabel": "View Our Work",
+    "primaryCtaHref": "#case-studies",
+    "secondaryCtaLabel": "Get in touch",
+    "secondaryCtaHref": "#contact",
+    "featuredImpacts": [
+      {
+        "title": "AI-Powered Document Analysis",
+        "metric": "95% Extraction Accuracy"
+      },
+      {
+        "title": "Protein Variant Intelligence",
+        "metric": "75% Expert Alignment"
+      },
+      {
+        "title": "Mobile App with Voice Interface",
+        "metric": "40K+ Daily Active Users"
+      },
+      {
+        "title": "Corporate Website Redesign",
+        "metric": "3.2X Lead Generation"
+      }
+    ]
+  },
+  "services": {
+    "label": "Services",
+    "title": "What We Build",
+    "description": "We design thoughtful interfaces and engineer custom AI systems. Every product combines design discipline with technical depth.",
+    "cards": [
+      {
+        "title": "Custom AI Systems & Document Intelligence",
+        "description": "Multi-tier AI systems from first principles with a focus on accuracy, cost, and explainability.",
+        "bullets": [
+          "Multi-Tier LLM Architecture",
+          "Vision + Text Processing",
+          "Cost & Latency Optimization"
+        ]
+      },
+      {
+        "title": "Scientific & Domain-Specific Product Design",
+        "description": "Interfaces for complex domains that stay powerful while becoming usable and teachable.",
+        "bullets": [
+          "Expert Feedback Loops",
+          "Data Visualization & Analytics",
+          "Accessible Complex UX"
+        ]
+      },
+      {
+        "title": "Mobile Product Development",
+        "description": "Production-grade Flutter applications with reliability, localization, and monetization built in.",
+        "bullets": [
+          "Flutter Architecture",
+          "Monetization Strategy",
+          "Platform Excellence"
+        ]
+      },
+      {
+        "title": "Web Product Strategy & Conversion",
+        "description": "Conversion-focused websites with measurable outcomes from copy to funnel analytics.",
+        "bullets": [
+          "Conversion Optimization",
+          "A/B Testing & Analytics",
+          "Technical Performance"
+        ]
+      }
+    ]
+  },
+  "caseStudies": {
+    "label": "Work",
+    "title": "Case Studies",
+    "description": "Real projects where we solved hard problems using AI, product design, and engineering rigor.",
+    "items": [
+      {
+        "id": "dead-deal-autopsy",
+        "name": "Dead Deal Autopsy",
+        "category": "Bankruptcy & Credit Analysis",
+        "image": "/assets/framerusercontent.com/images/yWX77fYaIr30iQO82qMbPCXrSA__q_bfe7313b.jpg",
+        "resultHeading": "AI Document Intelligence",
+        "resultText": "Built a three-tier extraction system that moved analysts from 8 hours per deal to about 15 minutes with 95% validated accuracy."
+      },
+      {
+        "id": "variantlens-open",
+        "name": "VariantLens-Open",
+        "category": "Protein Variant Analysis Platform",
+        "image": "/assets/framerusercontent.com/images/IoKI16RS2I9CoowJVD54UyHfHvU__q_bfe7313b.jpg",
+        "resultHeading": "Scientific Intelligence Platform",
+        "resultText": "Created a trust-first, explainable platform with case-file export and reproducibility support, achieving 75% expert alignment."
+      },
+      {
+        "id": "saraswati-daily-vow",
+        "name": "Saraswati Daily Vow",
+        "category": "Flutter Mobile App",
+        "image": "/assets/framerusercontent.com/images/XZsZu35pkqEdyenebhyMXcEtY__q_bfe7313b.png",
+        "resultHeading": "Mobile to 40K+ DAU",
+        "resultText": "Scaled a bilingual mobile product with resilient streak logic, notifications, and monetization to 40K+ daily active users."
+      },
+      {
+        "id": "fenor",
+        "name": "Fenor.org",
+        "category": "Corporate Website Redesign",
+        "image": "/assets/framerusercontent.com/images/mzud3Bq5c0T8UHpEp1a4gYqcnw__q_bfe7313b.jpg",
+        "resultHeading": "3.2X Lead Generation",
+        "resultText": "Redesigned value hierarchy and conversion flows, increasing conversion from 0.8% to 2.6% and reducing bounce to 32%."
+      }
+    ]
+  },
+  "process": {
+    "label": "Process",
+    "title": "Our Approach",
+    "description": "We have built complex products in AI, mobile, scientific computing, and web. Here is how we execute.",
+    "ctaLabel": "View Our Work",
+    "ctaHref": "#case-studies",
+    "steps": [
+      {
+        "number": "//01",
+        "title": "Discovery & Analysis",
+        "description": "We audit constraints and define measurable outcomes before writing production code."
+      },
+      {
+        "number": "//02.",
+        "title": "Design & Architecture",
+        "description": "We prototype rigorously and validate technical tradeoffs early, including model, infra, and UX choices."
+      },
+      {
+        "number": "//03.",
+        "title": "Build with Focus",
+        "description": "We build in vertical slices with quality checks, observability, and practical reliability from day one."
+      },
+      {
+        "number": "//04.",
+        "title": "Launch & Iterate",
+        "description": "We ship, measure outcomes, and iterate based on user behavior, analytics, and business metrics."
+      }
+    ]
+  },
+  "metrics": {
+    "label": "Expertise",
+    "title": "Why Companies Choose Us",
+    "description": "Technical founder execution with measurable outcomes across AI, mobile, and web products.",
+    "items": [
+      {
+        "value": "95",
+        "suffix": "%+",
+        "label": "Accuracy Systems",
+        "description": "Designed for explainability and validation, not black-box outputs."
+      },
+      {
+        "value": "200",
+        "suffix": "K+",
+        "label": "Combined Users",
+        "description": "Products shipped and scaled across consumer and specialist workflows."
+      },
+      {
+        "value": "5",
+        "suffix": "+",
+        "label": "Live Products",
+        "description": "Deployed systems with clear operational and business outcomes."
+      },
+      {
+        "value": "4",
+        "suffix": ".3",
+        "label": "Mobile Rating",
+        "description": "Consistent quality and reliability in production user environments."
+      }
+    ]
+  },
+  "reviews": {
+    "label": "Reviews",
+    "title": "What Users & Teams Say",
+    "description": "Feedback from teams that experienced measurable impact through shipped work.",
+    "items": [
+      {
+        "quote": "The dead deal extraction system eliminated 8 hours of manual work per deal and reached 95% accuracy.",
+        "name": "Investment Analyst",
+        "role": "Bankruptcy Advisory Firm",
+        "image": "/assets/framerusercontent_local/images/E3vzjdpFuSWiVeurdyPGMrSWk__q_e0b12f97.webp"
+      },
+      {
+        "quote": "VariantLens helped students understand why, not just what. It is now cited in research work.",
+        "name": "Professor",
+        "role": "Molecular Biology Department",
+        "image": "/assets/framerusercontent_local/images/blCNrfmP2RtprpiBXSGbUYelY__q_af89e6e9.webp"
+      },
+      {
+        "quote": "40K daily users with stable performance and thoughtful notifications. This is world-class mobile execution.",
+        "name": "Product Lead",
+        "role": "Consumer Wellness App",
+        "image": "/assets/framerusercontent_local/images/cFl24iPInxckRrL32eRgadp9ZJM__q_dc9c92b6.webp"
+      },
+      {
+        "quote": "The redesign improved lead quality and shortened our sales cycle. Prospects now understand value before calls.",
+        "name": "VP Sales",
+        "role": "B2B SaaS Company",
+        "image": "/assets/framerusercontent_local/images/uOR0RXqCvncnJFhOe6kPbaE9XLU__q_af89e6e9.jpg"
+      },
+      {
+        "quote": "Exam Repo solved fragmented exam information and shipped practical AI coaching in a single platform.",
+        "name": "Education Platform Director",
+        "role": "Edtech Company",
+        "image": "/assets/framerusercontent_local/images/jC7KwluILkhO0KHxk6qWEttOxhE__q_dc9c92b6.webp"
+      }
+    ]
+  },
+  "faq": {
+    "label": "Questions",
+    "title": "Frequently Asked Questions",
+    "description": "Clear answers to common client questions about execution, scope, and support.",
+    "items": [
+      {
+        "question": "How do you approach a new project?",
+        "answer": "We start with discovery and measurable goals, then prototype and validate before full implementation."
+      },
+      {
+        "question": "What is your experience with AI systems in production?",
+        "answer": "We build multi-tier systems with guardrails, validation layers, fallback paths, and practical observability."
+      },
+      {
+        "question": "Do you provide support after launch?",
+        "answer": "Yes. We monitor results, iterate based on real usage, and optimize continuously after launch."
+      },
+      {
+        "question": "How do you handle ambitious scope?",
+        "answer": "We phase delivery deliberately: MVP first, then expansion, with explicit tradeoffs and milestones."
+      },
+      {
+        "question": "What if the project needs a bigger team?",
+        "answer": "We can lead delivery directly or integrate with your existing team and specialists as needed."
+      },
+      {
+        "question": "How do you price projects?",
+        "answer": "Pricing depends on scope and complexity. We use clear milestones and transparent execution plans."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Ready to Build?",
+    "description": "45-minute discovery call. No pitch, just an honest assessment of your problem and what to build next.",
+    "submitLabel": "Get in touch",
+    "details": [
+      {
+        "id": "office",
+        "label": "Office",
+        "value": "Bengaluru, India",
+        "href": "https://maps.google.com/?q=Bengaluru%2C%20India"
+      },
+      {
+        "id": "email",
+        "label": "Email Us",
+        "value": "vector.veda.dev@gmail.com",
+        "href": "mailto:vector.veda.dev@gmail.com"
+      },
+      {
+        "id": "phone",
+        "label": "Call Us",
+        "value": "6202130675",
+        "href": "tel:6202130675"
+      }
+    ]
+  }
+}

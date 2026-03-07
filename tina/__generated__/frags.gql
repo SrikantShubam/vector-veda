@@ -1,0 +1,153 @@
+fragment NavigationParts on Navigation {
+  __typename
+  brandName
+  brandHref
+  ctaLabel
+  ctaHref
+  items {
+    __typename
+    label
+    href
+  }
+}
+
+fragment HomepageParts on Homepage {
+  __typename
+  hero {
+    __typename
+    statusText
+    titleLine1
+    titleLine2
+    subtitle
+    primaryCtaLabel
+    primaryCtaHref
+    secondaryCtaLabel
+    secondaryCtaHref
+    featuredImpacts {
+      __typename
+      title
+      metric
+    }
+  }
+  services {
+    __typename
+    label
+    title
+    description
+    cards {
+      __typename
+      title
+      description
+      bullets
+    }
+  }
+  caseStudies {
+    __typename
+    label
+    title
+    description
+    items {
+      __typename
+      id
+      name
+      category
+      image
+      resultHeading
+      resultText
+    }
+  }
+  process {
+    __typename
+    label
+    title
+    description
+    ctaLabel
+    ctaHref
+    steps {
+      __typename
+      number
+      title
+      description
+    }
+  }
+  metrics {
+    __typename
+    label
+    title
+    description
+    items {
+      __typename
+      value
+      suffix
+      label
+      description
+    }
+  }
+  reviews {
+    __typename
+    label
+    title
+    description
+    items {
+      __typename
+      quote
+      name
+      role
+      image
+    }
+  }
+  faq {
+    __typename
+    label
+    title
+    description
+    items {
+      __typename
+      question
+      answer
+    }
+  }
+  contact {
+    __typename
+    label
+    title
+    description
+    submitLabel
+    details {
+      __typename
+      id
+      label
+      value
+      href
+    }
+  }
+}
+
+fragment PagesParts on Pages {
+  __typename
+  title
+  body
+}
+
+fragment FooterParts on Footer {
+  __typename
+  brandName
+  brandTagline
+  copyrightText
+  navLinks {
+    __typename
+    label
+    href
+  }
+  resourceLinks {
+    __typename
+    label
+    href
+  }
+  socialLinks {
+    __typename
+    label
+    href
+    icon
+  }
+}

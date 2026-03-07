@@ -1,0 +1,167 @@
+.root {
+  position: relative;
+  z-index: 1;
+  width: min(1460px, calc(100% + 32px));
+  margin: 44px auto 0;
+}
+
+.rowMask {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+}
+
+.rowMask + .rowMask {
+  margin-top: 15px;
+}
+
+.track {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  animation: heroCardsMarquee 120s linear infinite;
+  animation-delay: -38s;
+}
+
+.trackReverse {
+  animation-direction: reverse;
+  animation-duration: 136s;
+  animation-delay: -44s;
+}
+
+.card {
+  flex: none;
+  width: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  background: var(--phase4-surface);
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.03);
+  padding: 5px;
+}
+
+.cardInner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  background: #121212;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.03);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 7px;
+  background: #121212;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.03);
+}
+
+.logoGlyph {
+  width: 22px;
+  height: 24px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 32% 35%, #ffffff 0%, #c6c6c6 32%, #8e8e8e 72%, #6f6f6f 100%);
+  opacity: 0.95;
+}
+
+.textWrap {
+  min-width: 0;
+  flex: 1;
+  display: grid;
+  gap: 6px;
+}
+
+.title {
+  margin: 0;
+  color: var(--phase4-text);
+  font-family: var(--phase4-font-main);
+  font-size: calc(var(--framer-root-font-size, 1rem) * 0.9);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.metric {
+  margin: 0;
+  font-family: var(--phase4-font-main);
+  font-size: calc(var(--framer-root-font-size, 1rem) * 0.8);
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+  white-space: nowrap;
+  background: linear-gradient(90deg, var(--phase4-accent) 0%, var(--phase4-text) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grip {
+  width: 20px;
+  flex: none;
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+}
+
+.grip span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--phase4-muted);
+  opacity: 0.9;
+}
+
+@keyframes heroCardsMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 7.5px));
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .card {
+    width: 330px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .root {
+    width: calc(100% + 24px);
+    margin: 30px -12px 0;
+  }
+
+  .rowMask {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+  }
+
+  .track {
+    animation-duration: 88s;
+  }
+
+  .trackReverse {
+    animation-duration: 102s;
+  }
+
+  .card {
+    width: 304px;
+  }
+
+  .title {
+    font-size: calc(var(--framer-root-font-size, 1rem) * 0.8);
+  }
+
+  .metric {
+    font-size: calc(var(--framer-root-font-size, 1rem) * 0.7);
+  }
+}
