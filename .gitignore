@@ -24,9 +24,14 @@ public/assets/framer_local/**/*.mjs
 # Local one-off files
 temp.py
 temp_script.py
+summarize_content.py
 new logo vector veda.png
 new logo vector veda 2 inverse colors.png
 toolbar logo.jpg
+CONTENT_MAPPING.md
+FINAL_CONTENT.md
+genesy_content.md
+personal_website_content.md
 
 # AUTO-GENERATED UNUSED PUBLIC ASSETS (do not edit by hand)
 /admin\.gitignore
