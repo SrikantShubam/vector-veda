@@ -34,8 +34,6 @@ genesy_content.md
 personal_website_content.md
 
 # AUTO-GENERATED UNUSED PUBLIC ASSETS (do not edit by hand)
-/admin\.gitignore
-/admin\index.html
 /apple-touch-icon.png
 /assets\5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2
 /assets\app.framerstatic.com\chunk-6FWJ5CQL.mjs
@@ -385,3 +383,4 @@ personal_website_content.md
 /logo-vector-veda.png
 /toolbar-logo.jpg
 # END AUTO-GENERATED UNUSED PUBLIC ASSETS
+.vercel

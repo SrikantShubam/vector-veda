@@ -1,12 +1,22 @@
 import { defineConfig } from "tinacms";
 
+const branch =
+  process.env.NEXT_PUBLIC_TINA_BRANCH ||
+  process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
+  process.env.HEAD ||
+  "master";
+
 export default defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || null,
   token: process.env.TINA_TOKEN || null,
-  branch: process.env.NEXT_PUBLIC_TINA_BRANCH || "main",
+  branch,
   build: {
     outputFolder: "admin",
     publicFolder: "public"
+  },
+  cmsCallback: (cms) => {
+    cms.flags.set("branch-switcher", true);
+    return cms;
   },
   media: {
     tina: {
