@@ -31,7 +31,7 @@ export default function NotFoundPage({ navigation, footer }) {
                 <Button href="/" ariaLabel="Return to Home">
                   Return Home
                 </Button>
-                <a className={styles.secondaryLink} href="#contact">
+                <a className={styles.secondaryLink} href="/#contact">
                   Contact us
                 </a>
               </div>

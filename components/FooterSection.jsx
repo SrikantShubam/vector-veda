@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { FaEnvelope, FaGlobe, FaPhone, FaWhatsapp } from "react-icons/fa6";
+import { useRouter } from "next/router";
+import { resolveSiteHref } from "../lib/resolveHref";
 import styles from "./FooterSection.module.css";
 
 const DEFAULT_NAV_LINKS = [
@@ -51,8 +53,18 @@ export default function FooterSection({
   resourceLinks = DEFAULT_RESOURCE_LINKS,
   socialLinks = DEFAULT_SOCIALS
 }) {
+  const router = useRouter();
   const [subscribeState, setSubscribeState] = useState({ type: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const pathname = router.pathname || "/";
+  const resolvedNavLinks = navLinks.map((item) => ({
+    ...item,
+    resolvedHref: resolveSiteHref(item.href, pathname)
+  }));
+  const resolvedResourceLinks = resourceLinks.map((item) => ({
+    ...item,
+    resolvedHref: resolveSiteHref(item.href, pathname)
+  }));
 
   async function handleSubscribe(event) {
     event.preventDefault();
@@ -128,12 +140,12 @@ export default function FooterSection({
           <article className={styles.card}>
             <h3 className={styles.cardTitle}>Navigation</h3>
             <ul className={styles.linkList}>
-              {navLinks.map((item) => {
+              {resolvedNavLinks.map((item) => {
                 const chars = Array.from(item.label);
                 const spread = chars.length > 1 ? chars.length - 1 : 1;
                 return (
                   <li key={item.href}>
-                    <a href={item.href} className={styles.link} aria-label={item.label}>
+                    <a href={item.resolvedHref} className={styles.link} aria-label={item.label}>
                       <span className={styles.linkRoll} aria-hidden="true">
                         {chars.map((char, index) => (
                           <span
@@ -157,12 +169,12 @@ export default function FooterSection({
           <article className={styles.card}>
             <h3 className={styles.cardTitle}>Resources</h3>
             <ul className={styles.linkList}>
-              {resourceLinks.map((item) => {
+              {resolvedResourceLinks.map((item) => {
                 const chars = Array.from(item.label);
                 const spread = chars.length > 1 ? chars.length - 1 : 1;
                 return (
                   <li key={item.href}>
-                    <a href={item.href} className={styles.link} aria-label={item.label}>
+                    <a href={item.resolvedHref} className={styles.link} aria-label={item.label}>
                       <span className={styles.linkRoll} aria-hidden="true">
                         {chars.map((char, index) => (
                           <span

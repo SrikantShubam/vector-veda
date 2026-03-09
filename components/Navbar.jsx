@@ -1,6 +1,8 @@
+import { useRouter } from "next/router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Button from "./Button";
 import styles from "./Navbar.module.css";
+import { resolveSiteHref } from "../lib/resolveHref";
 
 const DEFAULT_NAV = {
   brandName: "Vector Veda",
@@ -19,11 +21,19 @@ const DEFAULT_NAV = {
 };
 
 export default function Navbar({ navigation = DEFAULT_NAV }) {
+  const router = useRouter();
   const { items, brandName, brandHref, ctaLabel, ctaHref } = { ...DEFAULT_NAV, ...navigation };
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeHref, setActiveHref] = useState("");
   const barRef = useRef(null);
+  const pathname = router.pathname || "/";
+  const resolvedBrandHref = resolveSiteHref(brandHref, pathname);
+  const resolvedCtaHref = resolveSiteHref(ctaHref, pathname);
+  const resolvedItems = items.map((item) => ({
+    ...item,
+    resolvedHref: resolveSiteHref(item.href, pathname)
+  }));
 
   const setCursorActive = useCallback((active) => {
     const bar = barRef.current;
@@ -78,6 +88,11 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
   }, []);
 
   useEffect(() => {
+    if (pathname !== "/") {
+      setActiveHref("");
+      return undefined;
+    }
+
     const sectionItems = items.filter((item) => item.href && item.href.startsWith("#") && item.href.length > 1);
     if (!sectionItems.length) return undefined;
 
@@ -103,7 +118,7 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
       window.removeEventListener("scroll", resolveActive);
       window.removeEventListener("resize", resolveActive);
     };
-  }, [items]);
+  }, [items, pathname]);
 
   return (
     <header className={styles.shell} data-scrolled={isScrolled ? "true" : "false"}>
@@ -119,7 +134,7 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
         >
           <a
             className={styles.logoWrap}
-            href={brandHref}
+            href={resolvedBrandHref}
             aria-label="Logo Link"
             onMouseEnter={() => setCursorActive(true)}
             onMouseLeave={() => setCursorActive(false)}
@@ -135,7 +150,7 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
           </a>
 
           <div className={styles.menu}>
-            {items.map((item) => (
+            {resolvedItems.map((item) => (
               (() => {
                 const chars = Array.from(item.label);
                 const spread = chars.length > 1 ? chars.length - 1 : 1;
@@ -144,7 +159,7 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
                     key={item.href}
                     className={`${styles.menuLink} ${isScrolled && activeHref === item.href ? styles.menuLinkActive : ""
                       }`}
-                    href={item.href}
+                    href={item.resolvedHref}
                     aria-label={item.label}
                     onMouseEnter={() => setCursorActive(true)}
                     onMouseLeave={() => setCursorActive(false)}
@@ -170,7 +185,7 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
 
           <Button
             className={styles.cta}
-            href={ctaHref}
+            href={resolvedCtaHref}
             onMouseEnter={() => setCursorActive(true)}
             onMouseLeave={() => setCursorActive(false)}
           >
@@ -195,11 +210,11 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
         </nav>
 
         <div className={panelClassName} id="phase4-mobile-menu">
-          {items.map((item) => (
+          {resolvedItems.map((item) => (
             <a
               key={`mobile-${item.href}`}
               className={styles.mobileLink}
-              href={item.href}
+              href={item.resolvedHref}
               onClick={() => setIsOpen(false)}
             >
               {item.label}
@@ -207,7 +222,7 @@ export default function Navbar({ navigation = DEFAULT_NAV }) {
           ))}
           <Button
             className={styles.mobileCtaButton}
-            href={ctaHref}
+            href={resolvedCtaHref}
             onClick={() => setIsOpen(false)}
           >
             {ctaLabel}
