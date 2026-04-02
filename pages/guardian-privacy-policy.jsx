@@ -180,6 +180,10 @@ If you have questions about this Privacy Policy or Guardian's data practices, co
 ## Delete your data
 
 [Delete your data here](/guardian-data-deletion)
+
+## Delete your account
+
+[Delete your account here](/guardian-account-deletion)
 `;
 
 export default function GuardianPrivacyPolicyPage({ navigation, footer, page }) {

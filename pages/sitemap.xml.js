@@ -12,6 +12,7 @@ const ROUTES = [
   "/hanuman-chalisa-11x-sankalp-data-deletion",
   "/guardian-privacy-policy",
   "/guardian-data-deletion",
+  "/guardian-account-deletion",
   "/legals/terms-of-service"
 ];
 
