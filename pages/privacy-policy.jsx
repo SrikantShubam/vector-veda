@@ -1,4 +1,4 @@
-import FooterSection from "../components/FooterSection";
+﻿import FooterSection from "../components/FooterSection";
 import Navbar from "../components/Navbar";
 import { getSiteContent } from "../lib/siteContent";
 import styles from "../styles/LegalPage.module.css";
@@ -19,6 +19,14 @@ const APP_POLICIES = [
     description:
       "Privacy details for devotional counters, reminders, analytics, ads, device information, and optional shared feature data.",
     accent: "hanuman"
+  },
+  {
+    href: "/guardian-privacy-policy",
+    eyebrow: "App Privacy Policy",
+    title: "Guardian",
+    description:
+      "Privacy details for family linking, medication support, safety alerts, submitted evidence, and account-level protection signals.",
+    accent: "guardian"
   }
 ];
 

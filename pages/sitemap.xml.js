@@ -1,4 +1,4 @@
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "https://vectorveda.online").replace(
+﻿const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "https://vectorveda.online").replace(
   /\/+$/,
   ""
 );
@@ -10,6 +10,8 @@ const ROUTES = [
   "/saraswati-vandana-data-deletion",
   "/hanuman-chalisa-11x-sankalp-privacy-policy",
   "/hanuman-chalisa-11x-sankalp-data-deletion",
+  "/guardian-privacy-policy",
+  "/guardian-data-deletion",
   "/legals/terms-of-service"
 ];
 
