@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Private AI operations team avatar</title>
+  <desc id="desc">Abstract AI workflow badge for an anonymous private operations team.</desc>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="182" x2="182" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1d2433"/>
+      <stop offset=".52" stop-color="#0f3d2f"/>
+      <stop offset="1" stop-color="#32d583"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="42" fill="#050b13"/>
+  <rect x="12" y="12" width="176" height="176" rx="34" fill="url(#bg)"/>
+  <path d="M54 66h92M54 100h92M54 134h64" stroke="#f7fbf8" stroke-width="8" stroke-linecap="round" opacity=".24"/>
+  <circle cx="52" cy="66" r="8" fill="#f4d35e"/>
+  <circle cx="148" cy="100" r="8" fill="#f4d35e"/>
+  <text x="100" y="118" text-anchor="middle" fill="#f7fbf8" font-family="Georgia, serif" font-size="56" font-weight="700" letter-spacing="-3">AI</text>
+</svg>

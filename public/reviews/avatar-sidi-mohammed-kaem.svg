@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Sidi Mohammed Kaem avatar</title>
+  <desc id="desc">Branded monogram avatar with the initials SK.</desc>
+  <defs>
+    <linearGradient id="bg" x1="16" y1="36" x2="184" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#001f3f"/>
+      <stop offset=".56" stop-color="#0f3d2f"/>
+      <stop offset="1" stop-color="#d8a83f"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="42" fill="#03101b"/>
+  <rect x="12" y="12" width="176" height="176" rx="34" fill="url(#bg)"/>
+  <path d="M40 132 78 70l28 42 18-30 36 50" fill="none" stroke="#f7fbf8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".26"/>
+  <text x="100" y="116" text-anchor="middle" fill="#f7fbf8" font-family="Georgia, serif" font-size="64" font-weight="700" letter-spacing="-4">SK</text>
+</svg>
