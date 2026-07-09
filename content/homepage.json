@@ -73,39 +73,47 @@
   "caseStudies": {
     "label": "Work",
     "title": "Case Studies",
-    "description": "Real projects where we solved hard problems using AI, product design, and engineering rigor.",
+    "description": "Selected work across fintech, founder-led commerce, nonprofit web, mobile products, and AI workflow systems.",
     "items": [
       {
-        "id": "dead-deal-autopsy",
-        "name": "Dead Deal Autopsy",
-        "category": "Bankruptcy & Credit Analysis",
+        "id": "maestro-fintech",
+        "name": "Maestro Fintech",
+        "category": "Fintech Product Experience",
         "image": "/assets/framerusercontent.com/images/yWX77fYaIr30iQO82qMbPCXrSA__q_bfe7313b.jpg",
-        "resultHeading": "AI Document Intelligence",
-        "resultText": "Built a three-tier extraction system that moved analysts from 8 hours per deal to about 15 minutes with 95% validated accuracy."
+        "resultHeading": "Sharper Finance UX",
+        "resultText": "Worked with Bhupesh Chaudhary on Maestro Fintech to make the product story clearer for a finance audience: cleaner page structure, stronger trust signals, and user journeys that move visitors from context to action without confusion."
       },
       {
-        "id": "variantlens-open",
-        "name": "VariantLens-Open",
-        "category": "Protein Variant Analysis Platform",
+        "id": "vestige-gold",
+        "name": "Vestige Gold",
+        "category": "Founder-Led Wealth Product",
         "image": "/assets/framerusercontent.com/images/IoKI16RS2I9CoowJVD54UyHfHvU__q_bfe7313b.jpg",
-        "resultHeading": "Scientific Intelligence Platform",
-        "resultText": "Created a trust-first, explainable platform with case-file export and reproducibility support, achieving 75% expert alignment."
+        "resultHeading": "Product Narrative & Interface",
+        "resultText": "Partnered with Aditya Raj Kothari on Vestige Gold to shape a premium digital presence around the offer, explain the value proposition in plain language, and turn early-stage product thinking into a page users can actually evaluate."
+      },
+      {
+        "id": "fenor",
+        "name": "Fenor.org",
+        "category": "Mining Federation Website & Content System",
+        "image": "/assets/framerusercontent.com/images/mzud3Bq5c0T8UHpEp1a4gYqcnw__q_bfe7313b.jpg",
+        "resultHeading": "Multilingual Federation Website",
+        "resultText": "Worked with Sidi Mohammed Kaem on Fenor.org, the National Federation of Gold Factories in Mauritania, to clarify a multilingual site around sector organization, member representation, ESG commitments, mining news, and investor-facing information."
       },
       {
         "id": "saraswati-daily-vow",
         "name": "Saraswati Daily Vow",
         "category": "Flutter Mobile App",
         "image": "/assets/framerusercontent.com/images/XZsZu35pkqEdyenebhyMXcEtY__q_bfe7313b.png",
-        "resultHeading": "Mobile to 40K+ DAU",
-        "resultText": "Scaled a bilingual mobile product with resilient streak logic, notifications, and monetization to 40K+ daily active users."
+        "resultHeading": "Production Mobile Build",
+        "resultText": "Built and maintained a devotional mobile app with bilingual content, streak behavior, notifications, and monetization details handled carefully enough for real daily use rather than a demo-only launch."
       },
       {
-        "id": "fenor",
-        "name": "Fenor.org",
-        "category": "Corporate Website Redesign",
+        "id": "document-intelligence",
+        "name": "Document Intelligence Workflow",
+        "category": "AI Automation System",
         "image": "/assets/framerusercontent.com/images/mzud3Bq5c0T8UHpEp1a4gYqcnw__q_bfe7313b.jpg",
-        "resultHeading": "3.2X Lead Generation",
-        "resultText": "Redesigned value hierarchy and conversion flows, increasing conversion from 0.8% to 2.6% and reducing bounce to 32%."
+        "resultHeading": "Practical AI, Not Theatre",
+        "resultText": "Designed a document analysis workflow around reviewability, extraction quality, and operator control, so AI output could support real decisions instead of producing a black-box summary nobody trusted."
       }
     ]
   },
@@ -171,37 +179,37 @@
   },
   "reviews": {
     "label": "Reviews",
-    "title": "What Users & Teams Say",
-    "description": "Feedback from teams that experienced measurable impact through shipped work.",
+    "title": "What Clients Needed From the Work",
+    "description": "Project feedback from fintech, mining federation, mobile, and AI automation work by Vector Veda.",
     "items": [
       {
-        "quote": "The dead deal extraction system eliminated 8 hours of manual work per deal and reached 95% accuracy.",
-        "name": "Investment Analyst",
-        "role": "Bankruptcy Advisory Firm",
+        "quote": "Vector Veda helped us turn a complex fintech product into a clearer website experience. The messaging, page structure, and conversion flow finally explained what Maestro Fintech does without making users work for it.",
+        "name": "Bhupesh Chaudhary",
+        "role": "Fintech website strategy and product UX",
         "image": "/assets/framerusercontent_local/images/E3vzjdpFuSWiVeurdyPGMrSWk__q_e0b12f97.webp"
       },
       {
-        "quote": "VariantLens helped students understand why, not just what. It is now cited in research work.",
-        "name": "Professor",
-        "role": "Molecular Biology Department",
+        "quote": "For Vestige Gold, the work was not just design polish. Vector Veda shaped the product narrative, clarified the premium positioning, and made the offer easier for serious customers to understand.",
+        "name": "Aditya Raj Kothari",
+        "role": "Vestige Gold founder-led digital product",
         "image": "/assets/framerusercontent_local/images/blCNrfmP2RtprpiBXSGbUYelY__q_af89e6e9.webp"
       },
       {
-        "quote": "40K daily users with stable performance and thoughtful notifications. This is world-class mobile execution.",
-        "name": "Product Lead",
-        "role": "Consumer Wellness App",
+        "quote": "Fenor.org needed a serious multilingual web presence for a national gold-sector federation. Vector Veda helped structure the site around mining-sector credibility, member representation, ESG policy, news, and investor information.",
+        "name": "Sidi Mohammed Kaem",
+        "role": "Fenor.org mining federation website",
         "image": "/assets/framerusercontent_local/images/cFl24iPInxckRrL32eRgadp9ZJM__q_dc9c92b6.webp"
       },
       {
-        "quote": "The redesign improved lead quality and shortened our sales cycle. Prospects now understand value before calls.",
-        "name": "VP Sales",
-        "role": "B2B SaaS Company",
+        "quote": "The mobile app work felt production-minded from the start. Content, streaks, notifications, localization, and monetization were handled as real product decisions, not as demo features.",
+        "name": "Mobile Product Owner",
+        "role": "Flutter app development and product systems",
         "image": "/assets/framerusercontent_local/images/uOR0RXqCvncnJFhOe6kPbaE9XLU__q_af89e6e9.jpg"
       },
       {
-        "quote": "Exam Repo solved fragmented exam information and shipped practical AI coaching in a single platform.",
-        "name": "Education Platform Director",
-        "role": "Edtech Company",
+        "quote": "The AI automation work was built around trust. Vector Veda focused on reviewable outputs, operator control, and practical document intelligence instead of shipping a black-box chatbot.",
+        "name": "Operations Lead",
+        "role": "AI document workflow and automation",
         "image": "/assets/framerusercontent_local/images/jC7KwluILkhO0KHxk6qWEttOxhE__q_dc9c92b6.webp"
       }
     ]
