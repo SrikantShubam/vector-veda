@@ -201,15 +201,15 @@
         "image": "/assets/framerusercontent_local/images/cFl24iPInxckRrL32eRgadp9ZJM__q_dc9c92b6.webp"
       },
       {
-        "quote": "The mobile app work felt production-minded from the start. Content, streaks, notifications, localization, and monetization were handled as real product decisions, not as demo features.",
-        "name": "Mobile Product Owner",
-        "role": "Flutter app development and product systems",
+        "quote": "Our private Flutter app needed more than a pretty shell. Vector Veda treated content, streaks, notifications, localization, and monetization as product systems that had to work in the real world, not features bolted on for a demo.",
+        "name": "Private app founder",
+        "role": "Flutter mobile product work",
         "image": "/assets/framerusercontent_local/images/uOR0RXqCvncnJFhOe6kPbaE9XLU__q_af89e6e9.jpg"
       },
       {
-        "quote": "The AI automation work was built around trust. Vector Veda focused on reviewable outputs, operator control, and practical document intelligence instead of shipping a black-box chatbot.",
-        "name": "Operations Lead",
-        "role": "AI document workflow and automation",
+        "quote": "We needed AI for document work without handing control to a black-box chatbot. Vector Veda designed a workflow with reviewable outputs, clear operator control, and practical document intelligence our team could trust day to day.",
+        "name": "Private operations team",
+        "role": "AI document workflow",
         "image": "/assets/framerusercontent_local/images/jC7KwluILkhO0KHxk6qWEttOxhE__q_dc9c92b6.webp"
       }
     ]
